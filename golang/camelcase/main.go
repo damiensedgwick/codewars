@@ -34,3 +34,12 @@ func CamelCase(s string) string {
 func main() {
 	fmt.Println(CamelCase("camel case string"))
 }
+
+// Simplest / top solution on Codewars
+//package kata
+//
+//import "strings"
+//
+//func CamelCase(s string) string {
+//	return strings.Replace(strings.Title(s)," ","",-1)
+//}
