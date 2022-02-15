@@ -41,3 +41,6 @@ func main() {
 }
 
 // Best codewars solution
+// func DigitalRoot(n int) int {
+//	return (n - 1) % 9 + 1
+// }
