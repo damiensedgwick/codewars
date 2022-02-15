@@ -22,6 +22,24 @@ func CreateAreaCode(s []string) string {
 	return ac
 }
 
+func CreatePhoneNumberPrefix(s []string) string {
+	p := strings.Join(s[3:6], "") + "-"
+
+	return p
+}
+
+func ConcatRemainingDigits(s []string) string {
+	rd := strings.Join(s[6:], "")
+
+	return rd
+}
+
+func PhoneNumberBuilder(code, prefix, remaining string) string {
+	pn := code + " " + prefix + remaining
+
+	return pn
+}
+
 // CreatePhoneNumber([10]uint{1,2,3,4,5,6,7,8,9,0})
 // Should return "(123) 456-7890"
 
