@@ -4,16 +4,26 @@ package main
 import (
 	"fmt"
 	"strconv"
+	"strings"
 )
 
-func MakeStringSlice(intSlice []int) []string {
-	var slice []string
-	for _, i := range intSlice {
-		slice = append(slice, strconv.Itoa(i))
+func MakeStringSlice(digits []int) []string {
+	var s []string
+	for _, i := range digits {
+		s = append(s, strconv.Itoa(i))
 	}
 
-	return slice
+	return s
 }
+
+func CreateAreaCode(s []string) string {
+	ac := "(" + strings.Join(s[:3], "") + ")"
+
+	return ac
+}
+
+// CreatePhoneNumber([10]uint{1,2,3,4,5,6,7,8,9,0})
+// Should return "(123) 456-7890"
 
 func main() {
 	fmt.Println("Creating phone numbers")
