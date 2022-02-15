@@ -17,7 +17,7 @@ func TestMakeStringSlice(t *testing.T) {
 		"8",
 		"9",
 		"0",
-	}, MakeStringSlice([]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 0}))
+	}, MakeStringSlice([10]uint{1, 2, 3, 4, 5, 6, 7, 8, 9, 0}))
 }
 
 func TestCreateAreaCode(t *testing.T) {
