@@ -37,10 +37,6 @@ func main() {
 }
 
 // Simplest / top solution on Codewars
-//package kata
-//
-//import "strings"
-//
-//func CamelCase(s string) string {
+// func CamelCase(s string) string {
 //	return strings.Replace(strings.Title(s)," ","",-1)
-//}
+// }
