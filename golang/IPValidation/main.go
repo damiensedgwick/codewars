@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -32,8 +31,8 @@ func ValidateInput(input string) bool {
 	return true
 }
 
-func main() {
-	fmt.Println("Hello, World!")
+func Is_valid_ip(ip string) bool {
+	return ValidateInput(ip)
 }
 
 // Best codewars solution
