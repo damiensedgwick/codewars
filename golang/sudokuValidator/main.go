@@ -37,3 +37,21 @@
 // ]); // => false
 
 package main
+
+func CheckForZero(input []int) bool {
+	for _, v := range input {
+		if v == 0 {
+			return false
+		}
+	}
+
+	return true
+}
+
+func GetRow(puzzle [][]int, idx int) []int {
+	return puzzle[idx]
+}
+
+// func ValidateSolution(m [][]int) bool {
+// 	return false
+// }
