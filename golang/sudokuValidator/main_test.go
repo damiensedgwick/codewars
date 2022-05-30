@@ -20,50 +20,10 @@ var puzzle = [][]int{
 
 // grab the first row
 func TestCheckForZero(t *testing.T) {
-	assert.Equal(t, false, CheckForZero([]int{
-		5,
-		3,
-		4,
-		6,
-		7,
-		8,
-		9,
-		1,
-		0,
-	}))
-	assert.Equal(t, false, CheckForZero([]int{
-		5,
-		3,
-		0,
-		6,
-		7,
-		8,
-		9,
-		1,
-		2,
-	}))
-	assert.Equal(t, true, CheckForZero([]int{
-		5,
-		3,
-		4,
-		6,
-		7,
-		8,
-		9,
-		1,
-		2,
-	}))
-	assert.Equal(t, true, CheckForZero([]int{
-		5,
-		3,
-		4,
-		6,
-		7,
-		8,
-		9,
-		1,
-		2,
-	}))
+	assert.Equal(t, false, CheckForZero([]int{5, 3, 4, 6, 7, 8, 9, 1}))
+	assert.Equal(t, false, CheckForZero([]int{5, 3, 0, 6, 7, 8, 9, 1, 2}))
+	assert.Equal(t, true, CheckForZero([]int{5, 3, 4, 6, 7, 8, 9, 1, 2}))
+	assert.Equal(t, true, CheckForZero([]int{5, 3, 4, 6, 7, 8, 9, 1, 2}))
 }
 
 func TestGetRow(t *testing.T) {
