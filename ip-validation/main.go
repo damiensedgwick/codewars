@@ -34,8 +34,3 @@ func ValidateInput(input string) bool {
 func Is_valid_ip(ip string) bool {
 	return ValidateInput(ip)
 }
-
-// Best codewars solution
-// func Is_valid_ip(ip string) bool {
-// 	return net.ParseIP(ip) != nil
-// }

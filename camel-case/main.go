@@ -2,7 +2,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -31,12 +30,3 @@ func CamelCase(s string) string {
 
 	return camelCaseStr
 }
-
-func main() {
-	fmt.Println(CamelCase("camel case string"))
-}
-
-// Simplest / top solution on Codewars
-// func CamelCase(s string) string {
-//	return strings.Replace(strings.Title(s)," ","",-1)
-// }

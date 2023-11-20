@@ -2,7 +2,6 @@
 package main
 
 import (
-	"fmt"
 	"strconv"
 	"strings"
 )
@@ -35,12 +34,3 @@ func SumSliceDigits(s []int) int {
 func DigitalRoot(n int) int {
 	return SumSliceDigits(MakeSlice(n))
 }
-
-func main() {
-	fmt.Println(DigitalRoot(493193))
-}
-
-// Best codewars solution
-// func DigitalRoot(n int) int {
-//	return (n - 1) % 9 + 1
-// }

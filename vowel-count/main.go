@@ -2,7 +2,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -28,10 +27,4 @@ func Contains(slice []string, str string) bool {
 	}
 
 	return false
-}
-
-func main() {
-	c := GetCount("abracadabra")
-
-	fmt.Println(c)
 }
